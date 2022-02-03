@@ -55,5 +55,32 @@
 }
 
 .chat__input {
-  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  border-top: solid 1px lightgray;
+}
+
+.chat__input > form {
+  flex: 1;
+  display: flex;
+}
+
+.chat__input > form > input {
+  flex: 1;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+  outline-width: 0;
+}
+
+.chat__input > form > button {
+  display: none;
+}
+
+.chat__input > .MuiSvgIcon-root {
+  padding: 10px;
+  color: gray;
+  cursor: pointer;
 }

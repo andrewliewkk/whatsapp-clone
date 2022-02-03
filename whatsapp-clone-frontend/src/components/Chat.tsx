@@ -5,6 +5,7 @@ import { Avatar, IconButton } from "@material-ui/core";
 import ChatIcon from "@material-ui/icons/Chat";
 import MoreVertIcon from "@material-ui/icons/MoreVert";
 import InsertEmoticonIcon from "@material-ui/icons/InsertEmoticon";
+import MicIcon from "@material-ui/icons/Mic";
 type Props = {};
 
 export default function Chat({}: Props) {
@@ -45,9 +46,12 @@ export default function Chat({}: Props) {
         </p>
       </div>
       <div className="chat__input">
-        <IconButton>
-          <InsertEmoticonIcon />
-        </IconButton>
+        <InsertEmoticonIcon />
+        <form>
+          <input type="text" placeholder="Type a message" />
+          <button type="submit">Send a message</button>
+        </form>
+        <MicIcon />
       </div>
     </div>
   );
