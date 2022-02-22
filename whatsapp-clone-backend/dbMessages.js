@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const whatsappSchema = new mongoose.Schema({
   sender: String,
@@ -8,4 +8,4 @@ const whatsappSchema = new mongoose.Schema({
   read: Boolean,
 });
 
-export default mongoose.model("messageContent", whatsappSchema);
+export default mongoose.model('messageContent', whatsappSchema);
